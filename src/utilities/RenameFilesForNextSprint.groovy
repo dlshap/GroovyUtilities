@@ -1,6 +1,6 @@
 package utilities
 
-class RenameFiles {
+class RenameFilesForNextSprint {
 
     def REALRUN = true
 
@@ -10,7 +10,7 @@ class RenameFiles {
 
     String path, oldname, newname
 
-    RenameFiles() {
+    RenameFilesForNextSprint() {
         start()
     }
 
@@ -31,7 +31,7 @@ class RenameFiles {
     }
 
     static main(args) {
-        new RenameFiles()
+        new RenameFilesForNextSprint()
     }
 
     def start() {
