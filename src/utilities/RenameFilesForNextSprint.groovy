@@ -15,11 +15,11 @@ class RenameFilesForNextSprint {
     }
 
     def renameWithReplace() {
-        newname = oldname.replaceAll(/EFSP/, "ADS")
+        newname = oldname.replaceAll(/19-27/, "20-01")
     }
 
     def renameWithRegex() {
-        def pat = /(.*? Sprint 19-)(\d\d)(.*?v\d.)(\d).*- Copy(\..*)/
+        def pat = /(.*? Sprint 20-)(\d\d)(.*?v\d.)(\d).*- Copy(\..*)/
         def matcher = oldname =~ pat
         if (matcher.size() == 1) {
             def fn = matcher[0]
